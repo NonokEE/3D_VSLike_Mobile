@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dea8f2ecc830249b8afe20080b32a8, type: 3}
+  m_Name: Bullet_Weapon
+  m_EditorClassIdentifier: Assembly-CSharp::VSLike.Data.WeaponDataSO
+  weaponType: 0
+  weaponName: Bullet
+  weaponIcon: {fileID: 0}
+  commonStats:
+    baseDamage: 10
+    baseCooldown: 1
+    baseSpeed: 20
+    baseRange: 60
+    basePiercing: 0
+    baseCount: 1
+  levelUpgrades:
+  - damageMultiplier: 1
+    cooldownMultiplier: 1
+    specialEffectDescription: 
+  - damageMultiplier: 1.2
+    cooldownMultiplier: 0.9
+    specialEffectDescription: 
+  - damageMultiplier: 1.4
+    cooldownMultiplier: 0.8
+    specialEffectDescription: Speed +25%p
+  - damageMultiplier: 1.7
+    cooldownMultiplier: 0.7
+    specialEffectDescription: Piercing +2
+  - damageMultiplier: 2
+    cooldownMultiplier: 0.6
+    specialEffectDescription: Speed +50%p, Piercing +3
+  weaponSpecificData: {fileID: 11400000, guid: e51479c75e97fae418fc238ae1d38349, type: 2}
