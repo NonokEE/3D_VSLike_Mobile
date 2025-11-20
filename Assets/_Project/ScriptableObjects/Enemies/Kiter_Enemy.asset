@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29484b58d149f2f46a625fa3bc10d9b5, type: 3}
   m_Name: Kiter_Enemy
   m_EditorClassIdentifier: Assembly-CSharp::VSLike.Data.EnemyDataSO
-  enemyType: 0
-  enemyName: Charger
+  enemyType: 2
+  enemyName: Kiter
   commonStats:
-    baseHP: 30
-    baseDamage: 10
-    baseSpeed: 4
-    experienceReward: 10
+    baseHP: 40
+    baseDamage: 8
+    baseSpeed: 2.5
+    experienceReward: 20
     diesOnContact: 0
   waveScaling:
   - hpMultiplier: 1
@@ -33,4 +33,4 @@ MonoBehaviour:
   - hpMultiplier: 2
     damageMultiplier: 1.6
     speedMultiplier: 1.3
-  behaviorData: {fileID: 11400000, guid: 3ca6b4ba9b91de240aa94ad0e9c8d727, type: 2}
+  behaviorData: {fileID: 11400000, guid: 2bf84076579cc5b4588682e60dcdfb4b, type: 2}
