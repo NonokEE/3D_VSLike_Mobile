@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ec6c74c9a10a5148a9f56faad5a84f5, type: 3}
-  m_Name: Chaser Behavior
+  m_Name: Chaser_Behavior
   m_EditorClassIdentifier: Assembly-CSharp::VSLike.Data.ChaserBehaviorData
   pathUpdateInterval: 1
   stoppingDistance: 0.5
