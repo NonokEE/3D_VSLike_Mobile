@@ -4,8 +4,8 @@ using System.Collections.Generic;
 namespace VSLike.Core
 {
     /// <summary>
-    /// Generic object pool for Unity GameObjects with IPoolable components
-    /// Preallocates objects to avoid runtime Instantiate/Destroy (GC optimization)
+    /// Generic object pool for Unity GameObjects with IPoolable components<br/>
+    /// Preallocates objects to avoid runtime Instantiate/Destroy (GC optimization)<br/>
     /// </summary>
     /// <typeparam name="T">Component type that implements IPoolable</typeparam>
     public class Pool<T> where T : Component, IPoolable
@@ -18,8 +18,8 @@ namespace VSLike.Core
         private HashSet<T> activeObjects; // For fast Contains check
         
         /// <summary>
-        /// Initialize pool with prefab and size
-        /// Creates all objects upfront (no runtime allocation)
+        /// Initialize pool with prefab and size<br/>
+        /// Creates all objects upfront (no runtime allocation)<br/>
         /// </summary>
         public void Initialize(GameObject prefab, Transform parent, int size)
         {
@@ -61,8 +61,8 @@ namespace VSLike.Core
         }
         
         /// <summary>
-        /// Get an object from the pool
-        /// Returns null if pool is exhausted (no dynamic expansion on mobile)
+        /// Get an object from the pool<br/>
+        /// Returns null if pool is exhausted (no dynamic expansion on mobile)<br/>
         /// </summary>
         public T Get()
         {
@@ -125,8 +125,8 @@ namespace VSLike.Core
         }
         
         /// <summary>
-        /// Return all active objects to pool
-        /// Useful for scene transitions or game restart
+        /// Return all active objects to pool<br/>
+        /// Useful for scene transitions or game restart<br/>
         /// </summary>
         public void ReturnAll()
         {
@@ -152,8 +152,8 @@ namespace VSLike.Core
         }
         
         /// <summary>
-        /// Clear and destroy all pooled objects
-        /// Call on scene unload
+        /// Clear and destroy all pooled objects<br/>
+        /// Call on scene unload<br/>
         /// </summary>
         public void Clear()
         {

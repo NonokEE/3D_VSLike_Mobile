@@ -4,8 +4,8 @@ using System.Collections.Generic;
 namespace VSLike.Data
 {
     /// <summary>
-    /// Main weapon data ScriptableObject
-    /// References weapon-specific data for type-specific behavior
+    /// Main weapon data ScriptableObject<br/>
+    /// References weapon-specific data for type-specific behavior<br/>
     /// </summary>
     [CreateAssetMenu(fileName = "New Weapon", menuName = "VSLike/Weapon Data")]
     public class WeaponDataSO : ScriptableObject

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 namespace VSLike.Core
 {
     /// <summary>
-    /// Centralized object pool manager (Singleton)
-    /// Manages multiple pools for different object types
-    /// Call Initialize() at game start with all required prefabs
+    /// Centralized object pool manager (Singleton)<br/>
+    /// Manages multiple pools for different object types<br/>
+    /// Call Initialize() at game start with all required prefabs<br/>
     /// </summary>
     public class PoolManager : MonoBehaviour
     {

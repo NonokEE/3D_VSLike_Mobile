@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace VSLike.Data
 {
     /// <summary>
-    /// Main enemy data ScriptableObject
+    /// Main enemy data ScriptableObject<br/>
     /// References behavior-specific data for type-specific AI
     /// </summary>
     [CreateAssetMenu(fileName = "New Enemy", menuName = "VSLike/Enemy Data")]
