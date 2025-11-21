@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e618d9e7f43f2fa41ab829e84dc7230e, type: 3}
+  m_Name: Missile_Specific
+  m_EditorClassIdentifier: Assembly-CSharp::VSLike.Data.ExplosiveWeaponData
+  baseExplosionRadius: 5
+  explosionDamage: 10
+  accelerationDuration: 1
+  initialSpeed: 10
+  finalSpeed: 30
+  radiusMultiplierPerLevel:
+  - 1
+  - 1
+  - 1.25
+  - 1.25
+  - 1.5
+  chainExplosionsPerLevel: 0000000000000000000000000000000001000000
+  missilePrefab: {fileID: 0}
+  explosionEffectPrefab: {fileID: 0}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5dea8f2ecc830249b8afe20080b32a8, type: 3}
+  m_Name: Blade_Weapon
+  m_EditorClassIdentifier: Assembly-CSharp::VSLike.Data.WeaponDataSO
+  weaponType: 4
+  weaponName: Blade
+  weaponIcon: {fileID: 0}
+  commonStats:
+    baseDamage: 20
+    baseCooldown: 0
+    baseSpeed: 20
+    baseRange: 60
+    basePiercing: 0
+    baseCount: 1
+  levelUpgrades:
+  - damageMultiplier: 1
+    cooldownMultiplier: 1
+    specialEffectDescription: 
+  - damageMultiplier: 1.2
+    cooldownMultiplier: 0.9
+    specialEffectDescription: 
+  - damageMultiplier: 1.4
+    cooldownMultiplier: 0.8
+    specialEffectDescription: 
+  - damageMultiplier: 1.7
+    cooldownMultiplier: 0.7
+    specialEffectDescription: 
+  - damageMultiplier: 2
+    cooldownMultiplier: 0.6
+    specialEffectDescription: 
+  weaponSpecificData: {fileID: 11400000, guid: 0a3fe1d48dbaf6a44873eea5e21139b7, type: 2}
