@@ -49,8 +49,8 @@ namespace VSLike.Core
         }
         
         /// <summary>
-        /// Create and initialize a pool for a specific type
-        /// Must be called before using Get/Return for that type
+        /// Create and initialize a pool for a specific type<br/>
+        /// Must be called before using Get/Return for that type<br/>
         /// </summary>
         /// <typeparam name="T">Component type implementing IPoolable</typeparam>
         /// <param name="prefab">Prefab to pool</param>
