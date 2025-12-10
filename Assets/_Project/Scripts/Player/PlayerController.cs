@@ -61,6 +61,7 @@ namespace VSLike.Player
             if (!IsAlive) return;
             
             HandleMovement();
+            ClampPosition();
         }
         
         /// <summary>
