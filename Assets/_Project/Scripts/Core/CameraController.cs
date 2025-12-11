@@ -45,6 +45,7 @@ namespace VSLike.Core
             
             // Set FOV to 60 (spec requirement)
             cam.fieldOfView = 60f;
+            transform.rotation = Quaternion.Euler(45f, 0f, 0f);
             
             // Find player if not assigned
             if (target == null)
@@ -67,7 +68,7 @@ namespace VSLike.Core
             if (target == null) return;
             
             UpdateCameraPosition();
-            UpdateCameraRotation();
+            //UpdateCameraRotation();
         }
         
         /// <summary>
@@ -103,15 +104,15 @@ namespace VSLike.Core
             }
         }
         
-        /// <summary>
-        /// Update camera rotation to always look at target<br/>
-        /// Ensures correct viewing angle regardless of player position<br/>
-        /// </summary>
-        private void UpdateCameraRotation()
-        {
-            // Always look at target (maintains 45-degree angle)
-            transform.LookAt(target);
-        }
+        // /// <summary>
+        // /// Update camera rotation to always look at target<br/>
+        // /// Ensures correct viewing angle regardless of player position<br/>
+        // /// </summary>
+        // private void UpdateCameraRotation()
+        // {
+        //     // Always look at target (maintains 45-degree angle)
+        //     transform.LookAt(target);
+        // }
         
         /// <summary>
         /// Set new target at runtime (for camera switching)<br/>
