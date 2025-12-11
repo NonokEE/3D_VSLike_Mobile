@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 925912897}
   - component: {fileID: 925912896}
   - component: {fileID: 925912899}
+  - component: {fileID: 925912900}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -616,7 +617,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -643,13 +644,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925912895}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 15, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &925912899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +695,27 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &925912900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925912895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d7d4cb46801f1458f5f879164405cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VSLike.Core.CameraController
+  target: {fileID: 6916733997615103368}
+  offset: {x: 0, y: 15, z: -15}
+  useSmoothing: 0
+  smoothSpeed: 5
+  useBoundaries: 1
+  minX: -50
+  maxX: 50
+  minZ: -50
+  maxZ: 50
 --- !u!1 &927344324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1708,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2359afb3bb608df40a88f6c176476288, type: 3}
+--- !u!4 &6916733997615103368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6574730212724537262, guid: 2359afb3bb608df40a88f6c176476288, type: 3}
+  m_PrefabInstance: {fileID: 6916733997615103367}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1694,9 +1721,9 @@ SceneRoots:
   - {fileID: 514027766}
   - {fileID: 1015347209}
   - {fileID: 1199893621}
-  - {fileID: 925912898}
   - {fileID: 1643130632}
   - {fileID: 1089368000}
+  - {fileID: 925912898}
   - {fileID: 2009594447}
   - {fileID: 932689968}
   - {fileID: 927344325}

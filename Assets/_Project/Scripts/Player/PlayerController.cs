@@ -1,4 +1,3 @@
-// Assets/_Project/Scripts/Player/PlayerController.cs
 using UnityEngine;
 using UnityEngine.InputSystem;
 using VSLike.Core;
